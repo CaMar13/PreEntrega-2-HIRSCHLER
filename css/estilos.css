@@ -1,0 +1,1353 @@
+/* tipgrafia */
+font-family: 'Mooli', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+
+
+/* RESETEO CSS */ 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 37%;
+    gap: 03px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+
+
+/* PROPIEDADES GENERALES DEL SITIO */ 
+body {
+    background-image: url("../img/gure-final.webp");
+    opacity: 0,1;
+    background-repeat: repeat;
+}
+
+main {
+    margin: 02px 07px;
+}
+
+header {
+    background-color: #F787D0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    max-width: 100%;
+    width: 99%;
+    height: 03%;
+    padding: 03px;
+    margin: 01px;
+}
+
+
+h1{
+    background-color: white;
+    font-family: 'Mooli', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin: 01%;
+    padding: 01%;
+}
+
+h2, h3 {
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    padding: 05px;
+    margin: 02%;
+}
+
+p {
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding: 10px;
+    margin: 05px;
+}
+
+.img-general {
+    padding: 05px;
+    margin: 03px; 
+    border: 3px;
+    border-radius: 17px;
+}
+
+/* PANTALLAS TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    p {
+        font-size: 19px;
+        padding: 10px;
+        margin: 05px;
+    }
+}
+
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    body {
+        max-width: 100%;
+    }
+    
+    main {
+        width: 99%;
+        max-width: 100%;
+        margin: 01px;
+    }
+    
+    header {
+        background-color: #F787D0;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+    
+    p {
+        font-size: 16px;
+        padding: 07px;
+        margin: 01px;
+    }
+    
+    .img-general {
+        margin: 02px; 
+        border: 3px;
+        border-radius: 17px;
+    }
+}
+
+
+
+/* PROPIEDADES REDES SOCIALES */ 
+#redesSociales {
+    max-width: 300%;
+    padding: 32px 10px;
+	margin: auto;
+    position: fixed;
+    overflow: hidden;
+    right: -130px;
+    top: 230px;
+    z-index: 1100;
+}
+
+.social {
+    width: 41px;
+	position: fixed;
+	top: 50px;
+	right: 0;
+    float: left;
+    margin: 5px 3px;
+    margin-right: 4px;
+    top: 50%;
+	height: 205px;
+	margin-top: -100px;
+}
+
+.social {
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    cursor:pointer;
+}
+
+ion-icon {
+    font-size: 40px;
+    color: #000;
+    padding: 01px;
+    background: #83d7d0;
+    border-radius: 8PX;
+}
+
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    #redesSociales {
+        height: auto;
+        width: 99%;
+        max-width: 100%;
+        margin: 03px;
+        padding: 02px;
+        height: auto;
+        position: static;
+    }
+    
+    .social {
+        width: 100px;
+        display: flex;
+        flex-direction: row;
+        position: static;
+        margin: 5px 100px;
+    }
+    
+    ion-icon {
+        text-align: center;
+        font-size: 30px;
+        color: #000;
+        padding: 02px;
+        margin: 0px 07px;
+        border-radius: 8PX;
+    }
+}
+
+
+/* PROPIEDADES LOGO GUREUM*/ 
+.logo #logi {
+    width: 90%;
+    max-width: 100%;
+    height: 50%;
+    padding: 02% 07%;
+    margin: 07px;
+}
+
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .logo #logi {
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    padding: 02% 07%;
+    margin: 01%;
+    }
+}
+
+/* PROPIEDADES MENU NAVEGACION */ 
+nav {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    background: white;
+    border-radius: 50px;
+    padding: 02px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+nav ul li a {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a::after{
+    content: "";
+    background: #83d7d0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a:hover::after {
+    top: 50%;
+    opacity: 1;
+}
+
+a:hover, a.active {
+    background-color: none;
+    color: rgb(128, 123, 123);
+}
+
+.checkbtn{
+    font-size: 50px;
+    margin: 01%;
+    float: left;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* PANTALLAS TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    nav ul {
+        padding: 01px;
+    }
+    
+    nav ul li {
+        padding: 10px 15px;
+    }
+    
+    nav ul li a {
+        font-size: 24px;
+    }
+}
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn {
+        margin-left: -5%;
+        position: static;
+        line-height: 03px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        width: 70%;
+        overflow: hidden;
+        background: white;
+        border-radius: 50px;
+        padding: 02px;
+    }
+
+    nav ul{
+        position: fixed;
+        height: 260px;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .7s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 20px;
+        line-height: 10px;
+    }
+
+    nav ul li a{
+        font-size: 21px;
+    }
+
+    a:hover, a.active {
+        background-color: none;
+        color: rgb(128, 123, 123);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check checkbox {
+        display: none;
+    }
+}
+
+
+
+
+/* PROPIEDADES PAGINA INICIO*/
+    /* Propiedades Seccion: Historia y presentación de GUREUM + imagen*/
+.inicio {
+    width: 97%;
+    max-width: 100%;
+    margin: 01% 02%;
+}
+
+.inicioA {
+    margin: 20px;
+    padding: 05px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.iniImg img {
+    width: 95%;
+    margin: 01%;
+    padding: 06px;
+    border: 7px solid #83d7d0;
+    border-radius: 17px;
+}
+
+.iniTxt {
+    margin: 02%;
+    padding: 05px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+    /* Propiedades Seccion: cards */
+.ini-servicios {
+    width: 97%;
+    max-width: 100%;
+    margin: 01% 02%;
+    height: auto;
+}
+
+.contenedorCards {
+    margin: 03px;
+    padding: 03px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 24px;
+}
+
+.card-body {
+    font-size: 17px;
+    padding: 03px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+
+    /* Propiedades Seccion: staff + imagen*/
+.staffA {
+    width: 97%;
+    max-width: 100%;
+    margin: 01% 02%;
+    display: flex;
+    flex-direction: column;
+}
+
+.staffTexto {
+    margin: 20px;
+    padding: 05px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+.staffImg {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+}
+
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .inicio {
+        width: 99%;
+        max-width: 100%;
+        margin: 01%;
+    }
+    
+    .inicioA {
+        margin: 03px;
+        padding: 05px;
+    }
+    
+    .iniImg img {
+        width: 95%;
+        height: auto;
+    }
+    
+    .iniTxt {
+        margin: 01%;
+    }
+
+    .staffTexto {
+        margin: 05px;
+        padding: 05px;
+    }
+}
+
+
+
+/* PROPIEDADES PAGINA GUARDERIA*/
+    /* Propiedades Seccion: Introducción al servicio de hospedaje + imagenes*/
+.guarde-01 {
+    padding: 10px;
+    margin: 02%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.guarde-txta {
+    width: 50%;
+    margin: 10px;
+    overflow: auto;
+}
+
+.guarde-imga {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 4px 4px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ".div .div"
+    "div div";
+}
+
+    /* Propiedades Seccion: ¿Por que elegirnos?*/
+.guarde-02 {
+    margin: 02%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+
+.guarde-txtb {
+    width: 50%;
+    margin: 10px;
+}
+
+.guarde-txtb h2 {
+    font-size: 16px;
+}
+
+.guarde-imgb {
+    margin: 02px;
+    padding: 05px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+    /* Propiedades Seccion: Informacion extra sobre el beneficio de las guarderias*/
+.guarde-extra {
+    margin: 03% 02%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+
+.gua-extratx {
+    width: 90%;
+    margin: 20px;
+    padding: 05px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+.guard-list {
+    margin: 02px;
+    padding: 05px;
+    position: static;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+.guard-list li {
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    padding: 03px 30px;
+    margin: 15px 100px;
+}
+
+/* PANTALLAS TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .guarde-01 {
+        padding: 02px;
+        margin: 10px;
+    }
+
+    .guarde-txta {
+        width: 75%;
+        margin: 10px;
+    }
+
+    .guarde-02 {
+        margin: 02%;
+        padding: 10px;
+    }
+    
+    .guarde-txtb {
+        width: 85%;
+        margin: 10px;
+    }
+    
+    .guarde-txtb h2 {
+        font-size: 18px;
+    }
+    
+    .guarde-imgb {
+        margin: 02px;
+        padding: 05px;
+    }
+
+    .guard-list li {
+        font-size: 20px;
+        padding: 03px 30px;
+        margin: 15px 30px;
+    }
+}
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .guarde-01 {
+        width: 99%;
+        max-width: 100%;
+        height: auto;
+        padding: 03px;
+        margin: 01%;
+    }
+    
+    .guarde-txta {
+        width: 97%;
+        margin: 03px;
+    }
+
+    .guarde-imga {
+        width: 97%;
+        height: auto;
+    }
+    
+    .guaA, .guaB, .guaC, .guaD {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+    }
+
+        /* Propiedades Seccion: ¿Por que elegirnos?*/
+    .guarde-02 {
+        width: 99%;
+        max-width: 100%;
+        margin: 03% 01%;
+        padding: 02px;
+    }
+
+    .guarde-txtb {
+        width: 99%;
+        height: auto;
+        margin: 02px;
+    }
+
+    .guarde-txtb h2 {
+        font-size: 16px;
+    }
+
+    .guarde-imgb img {
+        width: 97%;
+        height: auto;
+        margin: 02px;
+    }
+
+        /* Propiedades Seccion: Informacion extra sobre el beneficio de las guarderias*/
+    .guarde-extra {
+        width: 99%;
+        max-width: 100%;
+        margin: 03% 01%;
+        padding: 02px;
+    }
+
+    .gua-extratx {
+        width: 97%;
+        padding: 02px;
+    }
+
+    .guard-list {
+        width: 97%;
+        margin: 02px 01px;
+        padding: 02px;
+    }
+
+    .guard-list li {
+        background-color: white;
+        font-size: 15px;
+        padding: 03px;
+        margin: 15px;
+    }
+
+    .gua-extratx h3 {
+        font-size: 16px;
+    }
+
+    .guarde-extra iframe {
+        width: 99%;
+        height: auto;
+        margin: 02px 01px;
+        padding: 02px;
+    }
+}
+
+
+
+/* PROPIEDADES PAGINA HOSPEDAJE */
+    /* Propiedades Seccion: Introducción al servicio de hospedaje*/
+.hospe-ini {
+    width: 97%;
+    max-width: 100%;
+    margin: 02%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+
+.hospeini-txt {
+    width: 50%;
+    margin: 07px 05px;
+    padding: 02px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+
+    /* Propiedades Seccion: Aclaracion de los que se debe traer*/
+.hospe-que {
+    width: 97%;
+    max-width: 100%;
+    margin: 02%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+
+.hospe-quetxt {
+    width: 50%;
+    margin: 02px;
+    padding: 05px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+.hospe-queimg {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+    /* Propiedades Seccion: Como reservar una cita y proceso de ingreso*/
+.hospe-cita {
+    width: 97%;
+    max-width: 100%;
+    margin: 02%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+
+.hospe-citatxt {
+    width: 50%;
+    margin: 10px;
+    padding: 05px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+.hospe-citaimg {
+    margin: 03px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+
+/* PANTALLAS TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .hospeini-txt {
+        width: 85%;
+        margin: 07px 05px;
+        padding: 02px;
+    }
+
+    .hospe-citatxt {
+        width: 85%;
+    }
+}
+
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .hospe-ini {
+        width: 95%;
+        margin: 06px;
+        padding: 02px;
+    }
+
+    .hospeTitulo h1 {
+        width: 95%;
+        max-width: 100%;
+        margin: 06px;
+    }
+    
+    .hospeini-txt {
+        width: 97%;
+        margin: 01px;
+        padding: 02px;
+    }
+
+    .hospeini-img img {
+        width: 98%;
+        max-width: 100%;
+        height: auto;
+        margin: 01px;
+    }
+    
+    .hospe-que {
+        width: 95%;
+        max-width: 100%;
+        margin: 02%;
+    }
+    
+    .hospe-quetxt {
+        width: 87%;
+        margin: 07px 02px;
+        padding: 02px;
+    }
+    
+    .hospe-queimg {
+        width: 88%;
+        height: auto;
+        margin: 02px;
+    }
+
+    .hospe-cita {
+        width: 95%;
+        height: auto;
+        margin: 20px 05px;
+        padding: 02px;
+    }
+    
+    .hospe-citatxt {
+        width: 89%;
+        margin: 02px;
+        padding: 05px;
+    }
+    
+    .hospe-citaimg {
+        margin: 02px;
+    }
+}
+
+
+/* PROPIEDADES PAGINA PELQUERIA / SPA */
+    /* Propiedades Seccion: Introducción del servicio + imagen*/
+.spa-ini {
+    width: 97%;
+    max-width: 100%;
+    margin: 02%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+
+.spa-txtA {
+    width: 50%;
+    margin: 17px;
+    padding: 05px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+.spa-imgA {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+
+    /* Propiedades Seccion: Lista de los servicios que incluimos */
+.pelu-list {
+    width: 97%;
+    max-width: 100%;
+    margin: 02%;
+    padding: 02px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.spa-listB {
+    width: 50%;
+    margin: 02px;
+    padding: 05px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+.spa-listB li {
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 03px 30px;
+    margin: 15px 100px;
+}
+
+.spa-imgB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+    /* Propiedades Seccion: Recordatorio final de que se debe reservar una cita*/
+.pelu-cita {
+    width: 70%;
+    height: auto;
+    padding: 03px;
+    margin: 06% 15%;
+}
+
+.pelu-cita p {
+    font-size: 24px;
+}
+
+    /* Propiedades Seccion: Bloque de imagenes*/
+#carouselExample {
+    margin: 03% 25%; 
+}
+
+/* PANTALLAS TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .spa-txtA {
+        width: 60%;
+    }
+
+    .pelu-list {
+        width: 97%;
+        max-width: 100%;
+        margin: 02%;
+        padding: 02px;
+    }
+    
+    .spa-listB {
+        width: 70%;
+        margin: 02px;
+        padding: 05px;
+    }
+
+    .spa-imgB {
+        margin: 01%;
+    }
+}
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .spaInicio {
+        width: 99%;
+        max-width: 100%;
+        margin: 01%;
+    }
+    
+    .spa-ini {
+        width: 97%;
+        max-width: 100%;
+        margin: 03% 01%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .spa-txtA {
+        width: 97%;
+        margin: 03px;
+        padding: 02px;
+    }
+    
+    .pelu-list {
+        width: 99%;
+        margin: 02px 01px;
+        padding: 02px;
+    }
+
+    .spa-listB {
+        width: 85%;
+        margin: 03px 01px;
+        padding: 02px;
+    }
+    
+    .spa-listB li {
+        background-color: white;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 03px;
+        margin: 15px;
+    }
+
+    .spa-listB h2 {
+        font-size: 15px;
+    }
+
+    .spa-imgB {
+        margin: 01px;
+        width: 77%;
+    }
+
+    .pelu-cita {
+        width: 93%;
+        height: auto;
+        padding: 03px;
+        margin: 03% 04%;
+    }
+    
+    .pelu-cita p {
+        font-size: 15px;
+    }
+
+    #carouselExample {
+        height: auto;
+        margin: 03% 02%;
+    }
+}
+
+
+
+/* PROPIEDADES PAGINA CONTACTO */
+    /* Propiedades Seccion: Todas las formas de contacto + imagen */
+.contac-opciones {
+    margin: 03px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+.contac-info {
+    width: 97%;
+    max-width: 100%;
+    margin: 02%;
+    padding: 02px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+
+    /* Propiedades Seccion: Formulario de contacto*/
+.formu-con {
+    margin: 03% 05%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: auto;
+}
+
+.formu-con form {
+    margin: 01%;
+}
+
+.formu-con ul div label {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px;
+    margin: 10px 30px;
+}
+
+.formu-con ul div input {
+    background-color: #83d7d0;
+    padding: 20px 70px;
+    margin: 17px;
+}
+
+.formu-con ul div textarea {
+    background-color: #83d7d0;
+    padding: 17px 70px;
+    margin: 07px;
+}
+
+.button {
+    padding: 20px 80px; 
+    margin: 20px 100px;
+    gap: 300px;
+}
+
+
+    /* Propiedades Seccion: Google Maps con ubicacion */
+.mapa {
+    margin: 03% 05%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    overflow: auto;
+}
+
+.mapa iframe {
+    margin: 02%; 
+}
+
+/* PANTALLAS TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contac-opciones {
+        width: 60%;
+    }
+
+    .formu-con {
+        margin: 03% 04%;
+    }
+
+    .formu-con ul div label {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        font-size: 19px;
+        padding: 10px;
+        margin: 10px 20px;
+    }
+    
+    .formu-con ul div input {
+        background-color: #83d7d0;
+        padding: 20px 70px;
+    }
+    
+    .formu-con ul div textarea {
+        background-color: #83d7d0;
+        padding: 17px 40px;
+        margin: 07px;
+    }
+
+    .mapa {
+        margin: 02% 04%;
+    }
+}
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .contac-info {
+        margin: 03% 01%;
+        padding: auto;
+        max-width: 100%;
+        width: 98%;
+        height: auto
+    }
+
+    .formu-con {
+        width: 98%;
+        max-width: 100%;
+        margin: 03% 01%;
+        height: auto;
+    }
+    
+    .formu-con h2 {
+        font-size: 15px;
+    }
+
+
+    .formu-con form {
+        margin: 02% 02%;
+        padding: auto;
+        max-width: 100%;
+        width: 100%;
+        height: auto
+    }
+    
+    .formu-con ul div label {
+        background-color: white;
+        font-size: 14px;
+        padding: 07px;
+        margin: 10px 30px;
+    }
+    
+    .formu-con ul div input {
+        background-color: #83d7d0;
+        width: 97%;
+        max-width: 100%;
+        padding: 02%;
+        margin: 02%;
+    }
+    
+    .formu-con ul div textarea {
+        background-color: #83d7d0;
+        width: 97%;
+        max-width: 100%;
+        padding: 01%;
+        margin: 02px;
+    }
+    
+    .button {
+        margin: 01%;
+        gap: 500px;
+    }
+
+    .mapa {
+        width: 98%;
+        max-width: 100%;
+        margin: 01%;
+        height: auto
+    }
+
+    .mapa h2 {
+        font-size: 16px;
+        width: 97%;
+        max-width: 100%;
+        margin: 2%;
+    }
+
+    .mapa iframe {
+        padding: auto;
+        max-width: 100%;
+        width: 97%;
+        height: auto
+    }
+}
+
+
+
+/* PROPIEDADES FOOTER */
+        /* Propiedades Seccion: Copyright */
+.copy p {
+    width: 99%;
+    font-size: 21px;
+    text-align: center;
+    padding: 01px 30px;
+}
+
+/* PANTALLA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .copy p {
+        max-width: 100%;
+        font-size: 14px;
+        margin: 02px;
+        padding: 01px 10px;
+    }
+}
